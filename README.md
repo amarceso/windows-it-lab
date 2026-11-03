@@ -1,14 +1,14 @@
 # Windows Lab
 
-Da ich Windows nur als Anwender kenne und mich seit Jahren mit Linux beschäftige, möchte ich mein Wissen rund um Windows auffrischen und vertiefen. Deshalb gibt es dieses Projekt. Die Themengebiete, die ich mir dadurch aneignen will umfassen: Windows 11, Windows Server, Active Directory, PowerShell, Microsoft 365 und ein selbst gehostetes Ticketsystem.
+Da ich Windows nur als Anwender kenne und mich seit Jahren mit Linux beschäftige, möchte ich mein Wissen rund um Windows auffrischen und vertiefen. Deshalb gibt es dieses Projekt. Die Themengebiete, die ich mir dadurch aneignen will, umfassen: Windows 11, Windows Server, Active Directory, PowerShell, Microsoft 365 und ein selbst gehostetes Ticketsystem.
 
-Alles läuft in virtuellen Maschinen. Jeder Block hat eine eigene Dokumentation in `docs/`. Mein Arbeitsprotokoll steht in [LOG.md](LOG.md).
+Alles läuft in virtuellen Maschinen. Jeder Punkt hat eine eigene Dokumentation in `docs/`. Mein Arbeitsprotokoll steht in [LOG.md](LOG.md).
 
 ## Umgebung
 
 | System | Version / Einstellung |
 |---|---|
-| Host | Fedora Linux 44 _(mit welcher Virtualisierung?)_ |
+| Host | Fedora Linux 44 & KVM/QEMU mit virt-manager |
 | Windows Server | _(Version)_ |
 | Windows 11 Client | _(Version)_ |
 | Netz | isoliertes virtuelles Netz, kein Zugriff auf mein Heimnetz |
@@ -18,7 +18,7 @@ Alles läuft in virtuellen Maschinen. Jeder Block hat eine eigene Dokumentation 
 Reihenfolge nach Abhängigkeit. Erledigt ist ein Punkt, wenn ich ihn selbst ohne Anleitung nachbauen kann und die Dokumentation dafür fertig ist.
 
 ### 0. Umgebung
-- [ ] Virtualisierung einrichten (KVM oder UTM)
+- [ ] Virtualisierung einrichten (KVM)
 - [ ] Evaluierungs-ISOs von Windows 11 und Windows Server besorgen & installieren
 - [ ] Isoliertes virtuelles Netz anlegen
 - [ ] Snapshots testen: Zustand sichern, kaputt machen, zurückspielen
