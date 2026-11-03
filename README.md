@@ -1,25 +1,25 @@
-# Windows IT-Support-Lab
+# Windows Lab
 
-Mein Lernprojekt für Windows im Support- und Admin-Alltag: Windows 11, Windows Server, Active Directory, PowerShell, Microsoft 365 und ein selbst gehostetes Ticketsystem. Ich komme aus der Linux-Welt (WIFI Linux-Systemadministrator, Homelab) und baue hier gezielt die Windows-Seite auf.
+Da ich Windows nur als Anwender kenne und mich seit Jahren mit Linux beschäftige, möchte ich mein Wissen rund um Windows auffrischen und vertiefen. Deshalb gibt es dieses Projekt. Die Themengebiete, die ich mir dadurch aneignen will umfassen: Windows 11, Windows Server, Active Directory, PowerShell, Microsoft 365 und ein selbst gehostetes Ticketsystem.
 
-Alles läuft in virtuellen Maschinen mit Evaluierungsversionen. Jeder Block hat eine eigene Dokumentation in `docs/`. Mein Arbeitsprotokoll steht in [LOG.md](LOG.md).
+Alles läuft in virtuellen Maschinen. Jeder Block hat eine eigene Dokumentation in `docs/`. Mein Arbeitsprotokoll steht in [LOG.md](LOG.md).
 
 ## Umgebung
 
-| Teil | Wert |
+| System | Version / Einstellung |
 |---|---|
-| Host | _(z. B. Fedora mit KVM/virt-manager)_ |
+| Host | Fedora Linux 44 _(mit welcher Virtualisierung?)_ |
 | Windows Server | _(Version)_ |
 | Windows 11 Client | _(Version)_ |
 | Netz | isoliertes virtuelles Netz, kein Zugriff auf mein Heimnetz |
 
 ## Checkliste
 
-Reihenfolge nach Abhängigkeit. Erledigt ist ein Punkt, wenn ich ihn selbst ohne Anleitung nachbauen kann und die Doku dazu steht.
+Reihenfolge nach Abhängigkeit. Erledigt ist ein Punkt, wenn ich ihn selbst ohne Anleitung nachbauen kann und die Dokumentation dafür fertig ist.
 
 ### 0. Umgebung
 - [ ] Virtualisierung einrichten (KVM oder UTM)
-- [ ] Evaluierungs-ISOs von Windows 11 und Windows Server besorgen
+- [ ] Evaluierungs-ISOs von Windows 11 und Windows Server besorgen & installieren
 - [ ] Isoliertes virtuelles Netz anlegen
 - [ ] Snapshots testen: Zustand sichern, kaputt machen, zurückspielen
 
@@ -76,17 +76,19 @@ Reihenfolge nach Abhängigkeit. Erledigt ist ein Punkt, wenn ich ihn selbst ohne
 - [ ] Ein paar Tickets von Anfang bis Ende durchspielen
 - [ ] Begriffe: Incident, Problem, Change, SLA
 
-### 9. Optional
-- [ ] Fundamentals-Prüfung (z. B. AZ-900), falls sie in Stellenanzeigen gefordert wird. Vorher prüfen, ob die Prüfung noch angeboten wird.
-
 ## So dokumentiere ich
 
-1. **Während der Arbeit:** Eine Zeile pro Schritt in [LOG.md](LOG.md): was gemacht, was kaputt, wie gelöst. Nicht formulieren, nur mitschreiben.
-2. **Am Ende jedes Blocks:** Aus dem Protokoll eine kurze Doku in `docs/` machen (15 bis 20 Minuten), danach committen.
-3. **Aufbau jeder Doku:**
+1. **Protokollierung:** Grobe Zusammenfassung basierend auf meinen privaten Notizen, die am Ende der Arbeitssession in [LOG.md](LOG.md) eingetragen werden:
+
+   Datum, Themengebiet, was ich gemacht hab, was kaputt war, wie ich es gelöst habe und was mir vielleicht noch fehlt, damit der Unterpunkt / Themenblock fertig ist.
+
+2. **Am Ende jedes Punktes:** Aus dem Protokoll eine kurze Dokumentation in `docs/` machen.
+
+3. **Aufbau der Dokumentation:**
    - Ziel
    - Umgebung
    - Vorgehen (Stichpunkte, nur Befehle, die nicht offensichtlich sind)
    - Probleme und Lösungen
    - Ergebnis
-4. **Keine Zugangsdaten und keine echten IP-Adressen** aus meinem Heimnetz in diesem Repository.
+
+4. **Es werden natürlich keine echten Zugangsdaten, echten IP-Adressen, Lizenzkeys etc.** in diesem Repository verwendet.
